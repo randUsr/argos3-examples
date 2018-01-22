@@ -46,11 +46,11 @@ void CFootBotGripping::ControlStep() {
    /* Increase the counter */
    ++m_unCounter;
    /* Depending on the value of the counter, pick an action */
-   if(m_unCounter < 70) {
+   if(m_unCounter < 62) {
       /* Move forward to reach the object */
       m_pcWheels->SetLinearVelocity(5.0f, 5.0f);
    }
-   else if(m_unCounter == 70) {
+   else if(m_unCounter == 62) {
       /* Stop and grip the object */
       m_pcWheels->SetLinearVelocity(0.0f, 0.0f);
       m_pcGripper->LockPositive();

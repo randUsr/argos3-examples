@@ -28,6 +28,13 @@
 
   </controllers>
 
+  <!-- ****************** -->
+  <!-- * Loop functions * -->
+  <!-- ****************** -->
+  <loop_functions library="build/loop_functions/gripping_loop_functions/libgripping_loop_functions"
+                  label="gripping_loop_functions">
+  </loop_functions>
+
   <!-- *********************** -->
   <!-- * Arena configuration * -->
   <!-- *********************** -->
@@ -71,6 +78,7 @@
                    look_at="0.233654,0.0876767,0.186165"
                    lens_focal_length="20" />
       </camera>
+      <user_functions label="gripping_qt_user_functions" />
     </qt-opengl>
   </visualization>
 
